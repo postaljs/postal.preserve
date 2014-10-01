@@ -90,6 +90,7 @@
                 }
             });
         }
+        return this;
     };
 
     return postal;

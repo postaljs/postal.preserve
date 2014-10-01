@@ -39,11 +39,29 @@
         }
     });
 
+    // non-expiring message
+    postal.publish({
+        channel: "hai",
+        topic: "another.thing",
+        data: {
+            baz: "bacon"
+        },
+        headers: {
+            preserve: true
+        }
+    });
+
+
+    // subscribe and purge after handling
     postal.subscribe({
         channel: "hai",
         topic: "#",
         callback: function(d, e) {
             $("body").append("<div><pre>" + JSON.stringify(e, null, 2) + "</pre></div>");
+            // optionally purge messages depending on your use case.
+            e.purge();
         }
-    }).enlistPreserved();
-}(postal, $));
+    })
+    .enlistPreserved();
+
+} (postal, $));

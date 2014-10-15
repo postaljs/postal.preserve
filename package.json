@@ -1,7 +1,7 @@
 {
     "name": "postal.preserve",
     "description": "Add-on for postal.js that provides message durability features.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "homepage": "http://github.com/postaljs/postal.preserve",
     "repository": {
         "type": "git",
@@ -43,7 +43,7 @@
     "dependencies": {
         "lodash": "~2.4.1",
         "conduitjs": "~0.3.0",
-        "postal": "~0.9.0"
+        "postal": "~0.10.3"
     },
     "bundleDependencies": [
         "lodash",
@@ -72,5 +72,9 @@
         "test": "mocha ./spec/*.js",
         "build": "gulp",
         "start": "gulp server"
-    }
+    },
+    "files": [
+        "lib",
+        "LICENSE"
+    ]
 }

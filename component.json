@@ -2,7 +2,7 @@
     "name": "postal.preserve",
     "repo": "postaljs/postal.preserve",
     "description": "Add-on for postal.js that provides message durability features.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "keywords": [
         "pub/sub",
         "pub",
@@ -21,7 +21,7 @@
     ],
     "dependencies": {
         "component/lodash": "*",
-        "postal/postal.js": "~0.9.0"
+        "postal/postal.js": "~0.10.3"
     },
     "scripts": ["lib/postal.preserve.min.js", "lib/postal.preserve.js"],
     "license": "MIT"

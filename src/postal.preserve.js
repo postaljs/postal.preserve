@@ -1,15 +1,15 @@
 /*jshint -W098 */
 (function(root, factory) {
-    if (typeof module === "object" && module.exports) {
-        // Node, or CommonJS-Like environments
-        module.exports = function(postal) {
-            factory(require("lodash"), require("conduitjs"), postal, this);
-        };
-    } else if (typeof define === "function" && define.amd) {
+    if (typeof define === "function" && define.amd) {
         // AMD. Register as an anonymous module.
         define(["lodash", "conduitjs", "postal"], function(_, Conduit, postal) {
             return factory(_, Conduit, postal, root);
         });
+    } else if (typeof module === "object" && module.exports) {
+        // Node, or CommonJS-Like environments
+        module.exports = function(postal) {
+            factory(require("lodash"), require("conduitjs"), postal, this);
+        };
     } else {
         // Browser globals
         root.postal = factory(root._, root.Conduit, root.postal, root);

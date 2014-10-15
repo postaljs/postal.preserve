@@ -39,6 +39,19 @@
         }
     });
 
+    // un-expired message
+    postal.publish({
+        channel: "hai",
+        topic: "and.one.more.thing",
+        data: {
+            baz: "bacon"
+        },
+        headers: {
+            preserve: true,
+            expires: new Date("2020-05-15T04:45:00.000Z")
+        }
+    });
+
     postal.subscribe({
         channel: "hai",
         topic: "#",

@@ -20,7 +20,7 @@
         "postal.js"
     ],
     "dependencies": {
-        "component/lodash": "*",
+        "lodash/lodash": "*",
         "postal/postal.js": "~0.10.3"
     },
     "scripts": ["lib/postal.preserve.min.js", "lib/postal.preserve.js"],

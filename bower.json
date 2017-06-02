@@ -29,9 +29,9 @@
         "lib/postal.preserve.js"
     ],
     "dependencies": {
-        "lodash": "~2.4.1",
-        "conduitjs": "~0.3.0",
-        "postal.js": "~0.10.3"
+        "lodash": "^4.17.4",
+        "conduitjs": "^0.3.3",
+        "postal": "^2.0.4"
     },
     "devDependencies": {
         "jquery": "~1.10.2",

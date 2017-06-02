@@ -41,9 +41,9 @@
         "node": ">=0.4.0"
     },
     "dependencies": {
-        "lodash": "~2.4.1",
-        "conduitjs": "~0.3.0",
-        "postal": "~0.10.3"
+        "lodash": "^4.17.4",
+        "conduitjs": "^0.3.3",
+        "postal": "^2.0.5"
     },
     "bundleDependencies": [
         "lodash",
